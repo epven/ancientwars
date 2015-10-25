@@ -1,0 +1,3908 @@
+"DOTAAbilities"
+//Items in here shown in inventory for building
+{
+
+	//=================================================================================	
+	// Building Specific: Construction of towers
+	//=================================================================================
+	"item_build_barrack"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_barrack"
+		"AbilityTextureName"							"item_build_stronghold"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_barrack"
+		"Building"										"1" 
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		
+	"item_build_stronghold"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_stronghold"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_stronghold"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+
+	"item_build_snipernest"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_snipernest"
+		"AbilityTextureName"							"item_build_snipernest"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"140"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Custom Stats
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"unitname"										"tower_snipernest"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+        }
+
+	"item_build_weaponlab"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_weaponlab"
+		"AbilityTextureName"							"item_build_weaponlab"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"210"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Custom Stats
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"unitname"										"tower_weaponlab"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+        }		
+		
+	"item_build_gryphonrock"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_gryphonrock"
+		"AbilityTextureName"							"item_build_gryphonrock"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"250"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Custom Stats
+		//-------------------------------------------------------------------------------------------------------------
+		
+		"unitname"										"tower_gryphonrock"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }		
+		
+	"item_build_chapel"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_chapel"
+		"AbilityTextureName"							"item_build_chapel"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"280"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_chapel"
+		"Building"										"1"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}		
+
+	"item_build_hjordhejmen"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_hjordhejmen"
+		"AbilityTextureName"							"item_build_hjordhejmen"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"300"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_hjordhejmen"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}	
+		
+	"item_build_gjallarhorn"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_gjallarhorn"
+		"AbilityTextureName"							"item_build_gjallarhorn"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"225"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_gjallarhorn"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_artillery"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_artillery"
+		"AbilityTextureName"							"item_build_artillery"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"200"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_artillery"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_watchtower"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_watchtower"
+		"AbilityTextureName"							"item_build_watchtower"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"150"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_watchtower"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}	
+	}
+
+	"item_build_heroicshrine"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_heroicshrine"
+		"AbilityTextureName"							"item_build_heroicshrine"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"700"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_heroicshrine"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_treasurebox"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_treasurebox"
+		"AbilityTextureName"							"arcane_boots2"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"//"350"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_treasurebox"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		
+	"item_build_murloc_hut"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_murloc_hut"
+		"AbilityTextureName"							"item_build_murloc_hut"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_murloc_hut"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_swamp_well"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_swamp_well"
+		"AbilityTextureName"							"item_build_swamp_well"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_swamp_well"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_temple_of_snakes"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_temple_of_snakes"
+		"AbilityTextureName"							"item_build_temple_of_snakes"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_temple_of_snakes"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_spawning_ground"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_spawning_ground"
+		"AbilityTextureName"							"item_build_spawning_ground"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_spawning_ground"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_reptile_pool"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_reptile_pool"
+		"AbilityTextureName"							"item_build_reptile_pool"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_reptile_pool"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_naga_spring"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_naga_spring"
+		"AbilityTextureName"							"item_build_naga_spring"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_naga_spring"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+    }
+	
+	"item_build_ancient_pyramid"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_ancient_pyramid"
+		"AbilityTextureName"							"item_build_ancient_pyramid"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_ancient_pyramid"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_oracle_of_siren"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_oracle_of_siren"
+		"AbilityTextureName"							"item_build_oracle_of_siren"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_oracle_of_siren"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		
+	"item_build_coral_statue"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_coral_statue"
+		"AbilityTextureName"							"item_build_coral_statue"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_coral_statue"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		
+	"item_build_tidal_guardian"
+    {
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_tidal_guardian"
+		"AbilityTextureName"							"item_build_tidal_guardian"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_tidal_guardian"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_archery_range"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_archery_range"
+		"AbilityTextureName"							"item_build_archery_range"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_archery_range"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_hall_of_honor"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_hall_of_honor"
+		"AbilityTextureName"							"item_build_hall_of_honor"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_hall_of_honor"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_bloodelf_war_academy"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_bloodelf_war_academy"
+		"AbilityTextureName"							"item_build_bloodelf_war_academy"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_bloodelf_war_academy"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_dragonhawk_portal"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_dragonhawk_portal"
+		"AbilityTextureName"							"item_build_dragonhawk_portal"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_dragonhawk_portal"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_highelf_siege_factory"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_highelf_siege_factory"
+		"AbilityTextureName"							"item_build_highelf_siege_factory"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_highelf_siege_factory"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_school_of_wizardry"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_school_of_wizardry"
+		"AbilityTextureName"							"item_build_school_of_wizardry"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_school_of_wizardry"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_city_of_magic"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_city_of_magic"
+		"AbilityTextureName"							"item_build_city_of_magic"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_city_of_magic"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_obelisk_of_light"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_obelisk_of_light"
+		"AbilityTextureName"							"item_build_obelisk_of_light"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_obelisk_of_light"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_arcane_tower"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_arcane_tower"
+		"AbilityTextureName"							"item_build_arcane_tower"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_arcane_tower"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_golden_shrine_of_justice"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_golden_shrine_of_justice"
+		"AbilityTextureName"							"item_build_golden_shrine_of_justice"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_golden_shrine_of_justice"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_lesser_demon_cage"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_lesser_demon_cage"
+		"AbilityTextureName"							"item_build_lesser_demon_cage"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_lesser_demon_cage"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_chaos_citadel"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_chaos_citadel"
+		"AbilityTextureName"							"item_build_chaos_citadel"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_chaos_citadel"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_altar_of_greed"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_altar_of_greed"
+		"AbilityTextureName"							"item_build_altar_of_greed"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_altar_of_greed"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_fountain_of_blood"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_fountain_of_blood"
+		"AbilityTextureName"							"item_build_fountain_of_blood"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_fountain_of_blood"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_dragon_nest"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_dragon_nest"
+		"AbilityTextureName"							"item_build_dragon_nest"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_dragon_nest"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_demon_gate"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_demon_gate"
+		"AbilityTextureName"							"item_build_demon_gate"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_demon_gate"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_eraser_level_one"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_eraser_level_one"
+		"AbilityTextureName"							"item_build_eraser_level_one"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_eraser_level_one"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_volcano"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_volcano"
+		"AbilityTextureName"							"item_build_volcano"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_volcano"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_magic_tower_ruin"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_magic_tower_ruin"
+		"AbilityTextureName"							"item_build_magic_tower_ruin"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_magic_tower_ruin"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_shrine_of_destruction"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_shrine_of_destruction"
+		"AbilityTextureName"							"item_build_shrine_of_destruction"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_shrine_of_destruction"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_build_rotting_hay_cart"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven" 
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_rotting_hay_cart"
+		"AbilityTextureName"							"item_build_rotting_hay_cart"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_rotting_hay_cart"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_temple_of_bones"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_temple_of_bones"
+				"AbilityTextureName"							"item_build_temple_of_bones"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_temple_of_bones"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_crypt"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_crypt"
+				"AbilityTextureName"							"item_build_crypt"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_crypt"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_haunted_mine"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_haunted_mine"
+				"AbilityTextureName"							"item_build_haunted_mine"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_haunted_mine"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_slaughter_house"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_slaughter_house"
+				"AbilityTextureName"							"item_build_slaughter_house"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_slaughter_house"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_dragon_cemetery"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_dragon_cemetery"
+				"AbilityTextureName"							"item_build_dragon_cemetery"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_dragon_cemetery"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_death_pit"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_death_pit"
+				"AbilityTextureName"							"item_build_death_pit"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_death_pit"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	}
+	
+	"item_build_skull_pile"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_skull_pile"
+				"AbilityTextureName"							"item_build_skull_pile"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_skull_pile"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	}
+	
+	"item_build_city_of_decay"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_city_of_decay"
+				"AbilityTextureName"							"item_build_city_of_decay"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_city_of_decay"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	}
+	
+	"item_build_turret_of_souls"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_turret_of_souls"
+				"AbilityTextureName"							"item_build_turret_of_souls"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_turret_of_souls"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	}
+	
+	"item_build_fighters_hall"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_fighters_hall"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_fighters_hall"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_shamanic_tent"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_shamanic_tent"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_shamanic_tent"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_troll_hut"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_troll_hut"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_troll_hut"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	
+	"item_build_falcon-clan_encampment"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_falcon-clan_encampment"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_falcon-clan_encampment"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	   
+	"item_build_kodo_farm"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_kodo_farm"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_kodo_farm"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	   
+	"item_build_orcish_siege_factory"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_orcish_siege_factory"
+				"AbilityTextureName"							"item_mithril_hammer"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_orcish_siege_factory"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+       }
+	   
+	"item_build_serpent_rock"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_serpent_rock"
+				"AbilityTextureName"							"item_maelstrom"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_serpent_rock"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	} 
+	   
+	"item_build_ceremonial_totem"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_ceremonial_totem"
+				"AbilityTextureName"							"item_maelstrom"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_ceremonial_totem"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	} 
+	     
+	"item_build_stasis_totem"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_stasis_totem"
+				"AbilityTextureName"							"item_maelstrom"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_stasis_totem"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	} 
+	     
+	"item_build_anti_air_tower"
+	{
+                // General
+                // ------------------------------------------------------------------------------------------------------------
+                "AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+				"BaseClass"                                     "item_datadriven" 
+                "ID" 											"2003"
+                "AbilityName" 									"item_build_anti_air_tower"
+				"AbilityTextureName"							"item_maelstrom"
+				
+                // Dota 2 Base Stats
+                //-------------------------------------------------------------------------------------------------------------
+                "AbilityCastRange"                              "400"
+                "AbilityCastPoint"                              "0.0"
+				"AOERadius" 									"92"
+				"AbilityGoldCost" 								"0"
+                "ItemCost"           							"0"
+				"ItemShopTags"          						"rare"
+				"ItemQuality"         							"rare"
+				"ItemStackable"         						"0"
+				"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+				"ItemPermanent"         						"1"
+				"ItemInitialCharges"    						"0"
+				"SideShop"            							"0"
+				"ItemKillable"                  				"0"
+				"ItemSellable"                  				"0"
+				"ItemDroppable"                 				"0"
+				"ItemPurchasable"								"0"
+				
+                // Name of tower this ability builds
+                //-------------------------------------------------------------------------------------------------------------
+				"unitname"										"tower_anti_air_tower"
+				"Building"										"1"
+				
+				"OnSpellStart"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"builder.lua"
+						"Function"		"Build"
+					}
+				}
+	} 
+	     
+	"item_build_snowy_rocks"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_snowy_rocks"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_snowy_rocks"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	   
+	"item_build_igloo"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_igloo"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_igloo"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		 
+	"item_build_ice_troll_hut"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_ice_troll_hut"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_ice_troll_hut"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+		 
+	"item_build_ice_ice_claws"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_ice_ice_claws"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_ice_ice_claws"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_azure_nest"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_azure_nest"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_azure_nest"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_crystal_palace"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_crystal_palace"
+		"AbilityTextureName"							"item_mithril_hammer"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_crystal_palace"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_frost_launcher"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_frost_launcher"
+		"AbilityTextureName"							"item_maelstrom"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_frost_launcher"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_chilling_mushroom"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_chilling_mushroom"
+		"AbilityTextureName"							"item_maelstrom"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_chilling_mushroom"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_world_freezer"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_world_freezer"
+		"AbilityTextureName"							"item_maelstrom"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_world_freezer"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	"item_build_icy_tower"
+	{
+		// General
+		// ------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"                               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"                                     "item_datadriven"
+		"ID" 											"2003"
+		"AbilityName" 									"item_build_icy_tower"
+		"AbilityTextureName"							"item_maelstrom"
+		
+		// Dota 2 Base Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                              "400"
+		"AbilityCastPoint"                              "0.0"
+		"AOERadius" 									"92"
+		"AbilityGoldCost" 								"0"
+		"ItemCost"           							"0"
+		"ItemShopTags"          						"rare"
+		"ItemQuality"         							"rare"
+		"ItemStackable"         						"0"
+		"ItemShareability"      						"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         						"1"
+		"ItemInitialCharges"    						"0"
+		"SideShop"            							"0"
+		"ItemKillable"                  				"0"
+		"ItemSellable"                  				"0"
+		"ItemDroppable"                 				"0"
+		"ItemPurchasable"								"0"
+		
+		// Name of tower this ability builds
+		//-------------------------------------------------------------------------------------------------------------
+		"unitname"										"tower_icy_tower"
+		"Building"										"1"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+//Builder Helper
+
+	"item_apply_modifiers"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"BaseClass"						"item_datadriven"
+	
+		"precache"
+		{
+			"particle"  "particles/econ/events/ti5/radiant_fountain_regen_lvl2_ti5.vpcf"
+			"particle"  "particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration_heal.vpcf"
+		}
+	
+		"Modifiers"
+		{
+			"modifier_construction"
+			{
+				"IsHidden"				"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/econ/events/ti5/radiant_fountain_regen_lvl2_ti5.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"0 250 0"
+						}
+					}
+				}
+			}
+			
+			"modifier_repair"
+			{
+				"IsHidden"				"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_witchdoctor/witchdoctor_voodoo_restoration_heal.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"0 250 0"
+						}
+					}
+				}
+			}
+			
+			
+			"modifier_builder_hidden"
+			{
+				"IsHidden"				"1"  
+	
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_ROOTED"			"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_DISARMED"		"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
+					//"MODIFIER_STATE_COMMAND_RESTRICTED"	"MODIFIER_STATE_VALUE_ENABLED" //Builder can send build orders while inside the building
+					//"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED" //Builder is selectable while inside the building
+				}
+			}
+	
+			"modifier_onfire"
+			{
+				"IsHidden"			"1"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/dire_fx/fire_barracks.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPointEntities"
+						{
+							"TARGET"	"attach_fx"
+						}
+					}
+				}
+			}
+		}		
+	}
+	
+	"item_building_cancel"
+	{
+		"BaseClass"             		"item_datadriven"
+		"AbilityTextureName"			"item_cancel"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+		"AbilityCastPoint"				"0"
+	
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"0"
+		"ItemSellable"					"0"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelBuilding"
+			}
+		}
+	}   
+	   
+	   
+//Game Items
+
+	"item_shop_blast_staff"
+	{
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2003"
+		"AbilityTextureName"			"item_mjollnir"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"300"
+		"UseInventory"					"1"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"360"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+	}   
+	   	   
+	"item_shop_rune_repair"
+	{
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2005"
+		"AbilityTextureName"			"item_headdress"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"500"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"1"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"240"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+	}
+	   
+	"item_shop_cheese"
+	{
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2006"
+		"AbilityTextureName"			"item_cheese"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1500"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"0"
+		"Stock_Max"						"2"
+		"Stock_Interval"				"100"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"2"
+	}
+	   
+	"item_boost_speed"
+	{
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_sven/sven_warcry_buff_c.vpcf"
+		}
+		
+		
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2007"
+		"AbilityTextureName"			"item_talisman_of_evasion"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"600"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"1"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"360"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+		
+		"Modifiers"
+		{
+			"item_boost_speed_aura"
+			{
+				"Passive" "1"
+				"IsHidden" "0"
+				"Aura" "item_boost_speed_unit"
+				"Aura_Radius" "50000"
+				"Aura_Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" "DOTA_UNIT_TARGET_CREEP"
+			}
+			
+			"item_boost_speed_unit"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_sven/sven_warcry_buff_c.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"0 250 0"
+						}
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"      "15"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"      "30"
+				}
+			}
+		}
+		
+	}
+	
+	"item_boost_damage"
+	{
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+		}
+		
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2008"
+		"AbilityTextureName"			"item_lotus_orb"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"650"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"1"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"360"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+		
+		"Modifiers"
+		{
+			"item_boost_damage_aura"
+			{
+				"Passive" "1"
+				"IsHidden" "0"
+				"Aura" "item_boost_damage_unit"
+				"Aura_Radius" "50000"
+				"Aura_Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" "DOTA_UNIT_TARGET_CREEP"
+			}
+			
+			"item_boost_damage_unit"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"250 255 255"
+						}
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"      "33"
+				}	
+			}
+		}
+	}
+
+	"item_damage_double"
+	{
+		"precache"
+		{
+			//"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+		}
+		
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2009"
+		"AbilityTextureName"			"item_shadow_amulet"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"600"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"0"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"60"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+		
+		"Modifiers"
+		{
+			"item_boost_damage_aura_bonus"
+			{
+				"Duration"		"30"
+				"Passive" 		"0"
+				"IsHidden" 		"0"
+				"Aura" 			"item_damage_double_aura"
+				"Aura_Radius" 	"50000"
+				"Aura_Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" 	"DOTA_UNIT_TARGET_CREEP"
+			}
+			
+			"item_damage_double_aura"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"250 255 255"
+						}
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"      "100"
+				}	
+			}
+		}
+	}
+	
+	"item_damage_triple"
+	{
+		"precache"
+		{
+			//"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+		}
+		
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2010"
+		"AbilityTextureName"			"item_refresher"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastPoint"				"0"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1400"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"0"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"60"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+		
+		"Modifiers"
+		{
+			"item_boost_damage_aura_bonus"
+			{
+				"Duration"		"30"
+				"Passive" 		"0"
+				"IsHidden" 		"0"
+				"Aura" 			"item_damage_double_aura"
+				"Aura_Radius" 	"50000"
+				"Aura_Teams" 	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types" 	"DOTA_UNIT_TARGET_CREEP"
+			}
+			
+			"item_damage_double_aura"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_c_debuff.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"01"			"250 255 255"
+						}
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"      "200"
+				}	
+			}
+		}
+	}
+	
+	"item_scroll_buff"
+	{
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_dazzle/dazzle_armor_friend.vpcf"
+		}
+		
+		"BaseClass"             		"item_datadriven"
+        "ID" 							"2011"
+		"AbilityTextureName"			"item_tpscroll"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityCastPoint"				"0.1"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"0"
+		"ItemInitialCharges"			"1"
+		"AbilityCastRange"				"99999"
+		"AOERadius" 					"1000"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"1"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"60"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"2"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"1000"
+			}
+		}
+		
+		"OnSpellStart"
+		{
+			"SpendCharge"
+			{}
+			
+			"ApplyModifier"
+			{
+				"ModifierName"	"item_scroll_buff_armor"
+				"Target"
+				{
+					"Center"	"POINT"
+					"Radius"	"1000"
+					"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"		"DOTA_UNIT_TARGET_CREEP"
+				}
+			}
+			
+			"ApplyModifier"
+			{
+				"ModifierName"	"item_scroll_buff_mana"
+				"Target"
+				{
+					"Center"	"POINT"
+					"Radius"	"1000"
+					"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"		"DOTA_UNIT_TARGET_CREEP"
+				}
+			}
+			
+			"Heal"
+			{
+				"HealAmount"	"400"
+				"Target"
+				{
+					"Center"	"POINT"
+					"Radius"	"1000"
+					"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"		"DOTA_UNIT_TARGET_CREEP"
+				}
+			}
+		}
+		
+		
+		"Modifiers"
+		{
+			"item_scroll_buff_armor"
+			{
+				"Duration"		"30"
+				"Passive" 		"0"
+				"IsHidden" 		"0"
+				"EffectName"	"particles/units/heroes/hero_dazzle/dazzle_armor_friend.vpcf"
+				"EffectAttachType"      "follow_overhead"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"8"
+				}
+			}
+			
+			"item_scroll_buff_mana"
+			{
+				"Duration"		"1"
+				"Passive" 		"0"
+				"IsHidden" 		"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"			"200"
+				}
+			}
+		}
+		
+		
+	}
+	
+	"item_orb_lightning"
+	{
+		"precache"
+		{
+			"particle"	"particles/neutral_fx/harpy_chain_lightning.vpcf"
+		}
+		
+		"BaseClass"             		"harpy_storm_chain_lightning"
+        "ID" 							"2012"
+		"AbilityTextureName"			"item_refresher"
+		//"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityCastPoint"				"0.3"
+		"ItemDroppable" 				"0"
+		"ItemPurchasable" 				"1"
+		"ItemSellable"					"0"
+		"ItemShareability"      		"ITEM_NOT_SHAREABLE"
+		"ItemPermanent"         		"1"
+		"AbilityCooldown"				"60.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"550"
+		
+		// Custom Info
+		//-------------------------------------------------------------------------------------------------------------
+		"Shop"							"1"
+		"EnergyCost"					"0"
+		"UseInventory"					"0"
+		"Stock_Max"						"1"
+		"Stock_Interval"				"140"
+		"Stock_Initial_Cooldown"		"0"
+		"Stock_Initial"					"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"initial_damage"		"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_range"			"3000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_delay"			"0.25"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent_loss"	"15.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_targets"			"10"
+			}
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

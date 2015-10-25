@@ -1,0 +1,121 @@
+"Build_data"
+//Key refers to ACTUAL ITEMS given to player
+// A-F = Tier 1
+// G-L - Tier 2
+{
+	
+	"npc_dota_hero_kunkka" //Human
+		{
+			"a"		"item_build_barrack"
+			"b"		"item_build_snipernest"
+			"c"		"item_build_weaponlab"
+			"d"		"item_build_gryphonrock"
+			"e"		"item_build_chapel"
+			"f"		"item_build_hjordhejmen"
+			
+			"g"		"item_build_gjallarhorn"
+			"h"		"item_build_artillery"
+			"i"		"item_build_watchtower"
+			"j"		"item_build_heroicshrine"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_slark" //Naga Builder
+		{
+			"a"		"item_build_murloc_hut"
+			"b"		"item_build_swamp_well"
+			"c"		"item_build_temple_of_snakes"
+			"d"		"item_build_spawning_ground"
+			"e"		"item_build_reptile_pool"
+			"f"		"item_build_naga_spring"
+			
+			"g"		"item_build_ancient_pyramid"
+			"h"		"item_build_oracle_of_siren"
+			"i"		"item_build_coral_statue"
+			"j"		"item_build_tidal_guardian"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_windrunner" //Elf Builder
+		{
+			"a"		"item_build_archery_range"
+			"b"		"item_build_hall_of_honor"
+			"c"		"item_build_bloodelf_war_academy"
+			"d"		"item_build_dragonhawk_portal"
+			"e"		"item_build_highelf_siege_factory"
+			"f"		"item_build_school_of_wizardry"
+			
+			"g"		"item_build_city_of_magic"
+			"h"		"item_build_obelisk_of_light"
+			"i"		"item_build_arcane_tower"
+			"j"		"item_build_golden_shrine_of_justice"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_warlock" //Chaos Builder
+		{
+			"a"		"item_build_lesser_demon_cage"
+			"b"		"item_build_chaos_citadel"
+			"c"		"item_build_altar_of_greed"
+			"d"		"item_build_fountain_of_blood"
+			"e"		"item_build_dragon_nest"
+			"f"		"item_build_demon_gate"
+			
+			"g"		"item_build_eraser_level_one"
+			"h"		"item_build_volcano"
+			"i"		"item_build_magic_tower_ruin"
+			"j"		"item_build_shrine_of_destruction"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_necrolyte" //Undead Builder
+		{
+			"a"		"item_build_rotting_hay_cart"
+			"b"		"item_build_temple_of_bones"
+			"c"		"item_build_crypt"
+			"d"		"item_build_haunted_mine"
+			"e"		"item_build_slaughter_house"
+			"f"		"item_build_dragon_cemetery"
+			
+			"g"		"item_build_death_pit"
+			"h"		"item_build_skull_pile"
+			"i"		"item_build_city_of_decay"
+			"j"		"item_build_turret_of_souls"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_huskar" //Orc Builder
+		{
+			"a"		"item_build_fighters_hall"
+			"b"		"item_build_shamanic_tent"
+			"c"		"item_build_troll_hut"
+			"d"		"item_build_falcon-clan_encampment"
+			"e"		"item_build_kodo_farm"
+			"f"		"item_build_orcish_siege_factory"
+			
+			"g"		"item_build_serpent_rock"
+			"h"		"item_build_ceremonial_totem"
+			"i"		"item_build_stasis_totem"
+			"j"		"item_build_anti_air_tower"
+			"k"		"item_build_treasurebox"
+		}
+		
+	"npc_dota_hero_tusk" //Northern Builder
+		{
+			"a"		"item_build_snowy_rocks"
+			"b"		"item_build_igloo"
+			"c"		"item_build_ice_troll_hut"
+			"d"		"item_build_ice_ice_claws"
+			"e"		"item_build_azure_nest"
+			"f"		"item_build_crystal_palace"
+			
+			"g"		"item_build_frost_launcher"
+			"h"		"item_build_chilling_mushroom"
+			"i"		"item_build_world_freezer"
+			"j"		"item_build_icy_tower"
+			"k"		"item_build_treasurebox"
+		}
+		
+		
+}
+

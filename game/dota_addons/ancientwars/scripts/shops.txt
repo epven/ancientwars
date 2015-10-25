@@ -1,0 +1,81 @@
+"dota_shops"
+{
+  "consumables"
+  {
+	"item"      "item_shop_blast_staff"
+	"item"      "item_shop_rune_repair"
+	"item"      "item_shop_cheese"
+	"item"      "item_boost_speed"
+	"item"      "item_boost_damage"
+	"item"		"item_damage_double"
+	"item"		"item_damage_triple"
+	"item"		"item_scroll_buff"
+	//"item"		"item_orb_lightning"
+  }
+
+  "attributes"
+  {
+
+  }
+
+  "weapons_armor"
+  {
+
+  }
+      
+  "misc"
+  {
+   
+  } 
+  
+  // Level 1 - Green Recipes
+  "basics"
+  {
+   
+  }
+
+  // Level 2 - Blue Recipes
+  "support"
+  {
+ 
+  }
+        
+  "magics"      
+  {
+
+  }
+    
+  // Level 3 - Purple Recipes 
+  "defense"
+  {
+
+  }
+      
+  "weapons"
+  {
+
+          
+          
+  }
+    
+  // Level 4 - Orange / Orb / Artifacts       
+  "artifacts"
+  { 
+  
+  }
+
+  "sideshop1"
+  {
+
+  }
+
+  "sideshop2"
+  {
+
+  }
+  
+  "secretshop"
+  {             
+
+  } 
+}
